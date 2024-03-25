@@ -25,6 +25,9 @@ public class Programa {
             case 4:
                 Ex04.executar();
                 break;
+            case 5:
+                Ex05.executar();
+                break;
         
             default:
                 System.out.println("Opção inválida.");
