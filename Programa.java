@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Programa {
@@ -33,6 +32,9 @@ public class Programa {
                 break;
             case 7:
                 Ex07.executar();
+                break;
+            case 8:
+                Ex08.executar();
                 break;
         
             default:

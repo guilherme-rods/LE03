@@ -17,6 +17,16 @@ public class Aluno {
         return media;
     }
 
+    public void imprimirAprovacao(){
+        if(calculoMedia() >= 7){
+            System.out.println("Aluno: " + nome + " - Aprovado");
+        }else if(calculoMedia() <= 5){
+            System.out.println("Aluno: " + nome + " - Reprovado");
+        }else{
+            System.out.println("Aluno: " + nome + " - Recuperação");
+        }
+    }
+
     public void imprimirResultado(){
         System.out.println("Nome do Aluno: " + nome);
         System.out.println("Média do Aluno: " + calculoMedia());
