@@ -8,7 +8,7 @@ import Classes.Pessoa;
 public class Ex11 {
 
     public static void executar() {
-        System.out.println("Exercício 10:");
+        System.out.println("Exercício 11:");
 
         Scanner scanner = new Scanner(System.in);
 
