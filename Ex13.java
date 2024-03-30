@@ -10,6 +10,9 @@ import Classes.Pessoa;
 public class Ex13 {
 
     public static void executar() {
+
+        System.out.println("Exercício 13:");
+        
         Scanner scanner = new Scanner(System.in);
         List<Pessoa> pessoas = new ArrayList<>();
         int totalAptos = 0;
