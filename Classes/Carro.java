@@ -7,9 +7,15 @@ public class Carro {
     private double distribuidor = 0.28;
     private int ano;
     private double valor;
+    private String tipoCombustivel;
 
     public Carro(double custo){
         this.custo = custo;
+    }
+
+    public Carro(String tipoCombust, double valor){
+        this.tipoCombustivel = tipoCombust;
+        this.valor = valor;
     }
 
     public Carro(int an, double vlr){
@@ -30,17 +36,37 @@ public class Carro {
         return valor;
     }
 
-    public double calcularDesconto() {
+    public double mostrarDesconto() {
         if (ano <= 2000) {
             return 0.12;
-        } else {
+        } else if (ano > 2000) {
             return 0.07;
+        }else{
+            return 0;
         }
     }
 
-    public double calcularValorComDesconto() {
-        return valor * (1 - calcularDesconto());
+    public double calcularDesconto() {
+        if (tipoCombustivel.equalsIgnoreCase("alcool")){
+            return valor * 0.25;
+        } else if(tipoCombustivel.equalsIgnoreCase("gasolina")){
+            return valor * 0.21;
+        } else if(tipoCombustivel.equalsIgnoreCase("diesel")){
+            return valor * 0.14;
+        }else{
+            return 0;
+        }
     }
+
+
+    public double calcularValorPago() {
+        return valor - calcularDesconto();
+    }
+
+    public double calcularValorComDesconto() {
+        return valor * (1 - mostrarDesconto());
+    }
+
 
     public void imprimirResultado(){
         System.out.println("Custo consumidor final: R$ " + String.format("%.2f", calcularCustoConsumidor()));

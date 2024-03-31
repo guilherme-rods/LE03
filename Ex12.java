@@ -27,7 +27,7 @@ public class Ex12 {
             
             Carro carro = new Carro(ano, valor);
 
-            double desconto = carro.calcularDesconto();
+            double desconto = carro.mostrarDesconto();
             double valorComDesconto = carro.calcularValorComDesconto();
 
             System.out.println("Desconto: " + (desconto * 100) + "%");
