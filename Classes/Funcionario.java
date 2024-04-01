@@ -2,9 +2,9 @@ package Classes;
 
 public class Funcionario {
 
-    private int id;
+    private int idade;
     private String nome;
-    private int CPF;
+    private String sexo;
     private double salarioAtual;
     private double salarioMin = 1412.00;
 
@@ -24,6 +24,13 @@ public class Funcionario {
         this.salarioAtual = salarioAtual;
     }
 
+    public Funcionario(String nome, int idade, String sexo, double salarioAtual){
+        this.nome = nome;
+        this.idade= idade;
+        this.sexo = sexo;
+        this.salarioAtual = salarioAtual;
+    }
+
     public double getSalarioMin(){
         return salarioMin;
     }
@@ -40,6 +47,20 @@ public class Funcionario {
         }
     }
 
+    public double calcularAbono(){
+        if(sexo.equalsIgnoreCase("M") && idade >= 30){
+            return 100.00;
+        }else if(sexo.equalsIgnoreCase("M") && idade < 30){
+            return 50.00;
+        }else if(sexo.equalsIgnoreCase("F") && idade >= 30){
+            return 200.00;
+        }else if(sexo.equalsIgnoreCase("F") && idade < 30){
+            return 80.00;
+        }else{
+            return 0;
+        }
+    }
+
     public void imprimirSalReajustado(){
         System.out.println("Salário reajustado: R$" + String.format("%.2f", calcularReajuste()));
     }
@@ -49,6 +70,12 @@ public class Funcionario {
         System.out.println("Nome do funcionário(a): " + nome);
         System.out.println("Valor do reajuste: R$" + (calcularReajuste() - salarioAtual));
         System.out.println("Novo salário: R$" + calcularReajuste());
+    }
+
+    public void imprimirResultadoAbono(){
+        System.out.println("Resultado:");
+        System.out.println("Nome do funcionário(a): " + nome);
+        System.out.println("Salário Líquido: R$" + (salarioAtual + calcularAbono()));
     }
 
 
