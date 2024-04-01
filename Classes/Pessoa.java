@@ -7,6 +7,7 @@ public class Pessoa {
     private boolean saude;
     private int idade;
     private double pesoIdeal;
+    private char grupoDeRisco;
 
     public Pessoa(int id){
         this.idade = id;
@@ -28,6 +29,12 @@ public class Pessoa {
         this.sexo = sexo;
         this.altura = altura;
         this.idade = idade;
+    }
+
+    public Pessoa(String nome, int idade, char grupoDeRisco){
+        this.nome = nome;
+        this.idade = idade;
+        this.grupoDeRisco = grupoDeRisco;
     }
 
     public void setSexo(String sex){
@@ -86,5 +93,23 @@ public class Pessoa {
 
     public void imprimirResultado(){
         System.out.println("O peso ideal da pessoa é: " + pesoIdeal);
+    }
+
+    public int definirCategoria(){
+        if (idade < 17 || idade > 70) return -1;
+        if (idade <= 20) return grupoDeRisco == 'B' ? 1 : grupoDeRisco == 'M' ? 2 : 3;
+        if (idade <= 24) return grupoDeRisco == 'B' ? 2 : grupoDeRisco == 'M' ? 3 : 4;
+        if (idade <= 34) return grupoDeRisco == 'B' ? 3 : grupoDeRisco == 'M' ? 4 : 5;
+        if (idade <= 64) return grupoDeRisco == 'B' ? 4 : grupoDeRisco == 'M' ? 5 : 6;
+        return grupoDeRisco == 'B' ? 7 : grupoDeRisco == 'M' ? 8 : 9;
+    }
+
+    public void imprimirCategoria() {
+        int categoria = definirCategoria();
+        if (categoria == -1) {
+            System.out.println("Sinto muito Sr.(a) "+ nome + ", você não se enquadra em nenhuma das categorias ofertadas.");
+        } else {
+            System.out.println("O Sr.(a) " + nome + " é classificado(a) na categoria " + categoria + " do seguro.");
+        }
     }
 }
