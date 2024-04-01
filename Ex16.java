@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Ex16 {
 
-    public static void main(String[] args) {
+    public static void executar() {
         
         System.out.println("Exercício 16:");
 
