@@ -1,7 +1,5 @@
 package Classes;
 
-import java.util.Scanner;
-
 public class Contador {
 
     private int [] num = new int [80];
