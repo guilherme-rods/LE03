@@ -76,6 +76,9 @@ public class Programa {
                 case 21:
                     Ex21.executar();
                     break;
+                case 22:
+                    Ex22.executar();
+                    break;
             
                 default:
                     System.out.println("Opção inválida.");
