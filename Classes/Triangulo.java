@@ -2,7 +2,6 @@ package Classes;
 
 public class Triangulo {
 
-    private String nome;
     private int[] lado = new int[3];
    
     public Triangulo(int lado1, int lado2, int lado3){
