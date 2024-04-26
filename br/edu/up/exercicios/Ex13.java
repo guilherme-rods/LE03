@@ -52,6 +52,6 @@ public class Ex13 {
         System.out.println("Total de pessoas aptas: " + totalAptos);
         System.out.println("Total de pessoas inaptas: " + totalInaptos);
 
-        scanner.close();
+        // // scanner.close();
     }
 }

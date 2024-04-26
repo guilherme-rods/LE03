@@ -30,6 +30,6 @@ public class Ex01 {
 
         aluno.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

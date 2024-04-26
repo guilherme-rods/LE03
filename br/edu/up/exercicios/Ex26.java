@@ -30,6 +30,6 @@ public class Ex26 {
 
         pessoa.imprimirCategoria();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

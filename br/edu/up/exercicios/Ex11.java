@@ -32,6 +32,6 @@ public class Ex11 {
 
         System.out.println("No total são " + (pessoa.length - contador) + " mulheres e " + contador + " homens!");
 
-        scanner.close();
+        // // scanner.close();
     }
 }

@@ -21,6 +21,6 @@ public class Ex06 {
 
         produto.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

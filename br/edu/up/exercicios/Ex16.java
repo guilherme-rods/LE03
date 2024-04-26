@@ -30,6 +30,6 @@ public class Ex16 {
         }
 
         System.out.println("Até o próximo exercício: ");
-        scanner.close();  
+        // // scanner.close();  
     }
 }

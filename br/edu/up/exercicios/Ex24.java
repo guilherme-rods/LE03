@@ -33,6 +33,6 @@ public class Ex24 {
         aluno.calculoMediaPonderada();
         aluno.imprimirMediaPonderada();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

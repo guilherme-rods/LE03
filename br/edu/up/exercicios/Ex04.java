@@ -21,6 +21,6 @@ public class Ex04 {
 
         conversao.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

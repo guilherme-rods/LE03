@@ -20,6 +20,6 @@ public class Ex19 {
         Triangulo triangulo = new Triangulo(lado[0], lado[1],lado[2]);
         System.out.println(triangulo.definirTriangulo());
 
-        scanner.close();
+        // // scanner.close();
     }
 }

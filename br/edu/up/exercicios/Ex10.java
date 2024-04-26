@@ -32,6 +32,6 @@ public class Ex10 {
                 System.out.println("A " + (i + 1) + "º pessoa é menor de idade.");
             }
         }
-        scanner.close();
+        // // scanner.close();
     }
 }

@@ -102,6 +102,7 @@ public class Programa {
             System.out.println("Deseja verificar outro exercício? (S/N)");
             String continuar = scanner.next();
             if (!continuar.equalsIgnoreCase("S")) {
+                scanner.close();
                 break;
             }
         }

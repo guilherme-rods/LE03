@@ -44,6 +44,6 @@ public class Ex12 {
         System.out.println("Total de carros com ano até 2000: " + carrosAte2000);
         System.out.println("Total de carros com ano acima de 2000: " + carrosAcima2000);
         
-        scanner.close();
+        // // scanner.close();
     }
 }

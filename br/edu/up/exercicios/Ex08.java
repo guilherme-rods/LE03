@@ -30,7 +30,7 @@ public class Ex08 {
 
         aluno.imprimirAprovacao();
 
-        scanner.close();
+        // // scanner.close();
     }
 
 }

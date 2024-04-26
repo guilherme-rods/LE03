@@ -19,6 +19,6 @@ public class Ex05 {
 
         compra.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

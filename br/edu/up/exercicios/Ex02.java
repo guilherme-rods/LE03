@@ -22,6 +22,6 @@ public class Ex02 {
 
         automovel.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

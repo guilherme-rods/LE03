@@ -17,6 +17,6 @@ public class Ex07 {
 
         carro.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

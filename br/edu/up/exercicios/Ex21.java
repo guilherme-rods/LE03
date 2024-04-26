@@ -31,6 +31,6 @@ public class Ex21 {
 
         } 
         System.out.println("Até o próximo exercício!");
-        scanner.close();
+        // // scanner.close();
     }
 }

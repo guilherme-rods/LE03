@@ -57,7 +57,7 @@ public class Ex14 {
         System.out.println("\nMédia de preço de custo: " + media_custo);
         System.out.println("Média de preço de venda: " + media_preco_venda);
 
-        scanner.close();
+        // // scanner.close();
     }
 
 }

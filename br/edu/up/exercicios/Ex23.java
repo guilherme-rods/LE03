@@ -35,6 +35,6 @@ public class Ex23 {
             pessoa.imprimirResultado();
         }
         System.out.println("Até o próximo exercício!");
-        scanner.close();
+        // // scanner.close();
     }
 }

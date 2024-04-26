@@ -42,6 +42,6 @@ public class Ex25 {
 
         aluno.imprimirClassificacao();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

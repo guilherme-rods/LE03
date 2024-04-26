@@ -25,6 +25,6 @@ public class Ex03 {
 
         vendedor.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

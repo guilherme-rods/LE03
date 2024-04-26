@@ -30,6 +30,6 @@ public class Ex09 {
 
         contador.imprimirResultado();
 
-        scanner.close();
+        // // scanner.close();
     }
 }

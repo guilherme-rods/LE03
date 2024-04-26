@@ -43,6 +43,6 @@ public class Ex15 {
         System.out.println("Total de desconto: R$" + String.format("%.2f",totalDesconto));
         System.out.println("Total pago pelos clientes: R$" + String.format("%.2f",totalPago));
 
-        scanner.close();
+        // // scanner.close();
     }
 }

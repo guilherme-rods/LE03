@@ -36,6 +36,6 @@ public class Ex20 {
             professor.imprimirResultado();
         }
         System.out.println("Até o próximo exercício!");
-        scanner.close();
+        // // scanner.close();
     }
 }

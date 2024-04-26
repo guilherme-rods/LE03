@@ -34,6 +34,6 @@ public class Ex22 {
             contaDeLuz.imprimirResultado();
         }
         System.out.println("Até o próximo exercício!");
-        scanner.close();
+        // // scanner.close();
     }
 }

@@ -37,6 +37,6 @@ public class Ex17 {
 
         System.out.println("A folha de pagamento aumentou em R$ " + totalReajuste);
     
-        scanner.close();
+        // // scanner.close();
     }
 }

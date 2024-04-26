@@ -36,6 +36,6 @@ public class Ex18 {
             funcionario.imprimirResultadoAbono();
         }
         System.out.println("Até o próximo exercício: ");
-        scanner.close();
+        // // scanner.close();
     }
 }
